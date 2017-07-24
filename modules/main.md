@@ -6,9 +6,9 @@ title:  "기본 맵 요소"
 
 ---
 
-모든 맵 XML파일에는 기본이 되는 `<map>` 모듈이 포함되어야 합니다. 여기에는 맵 이름, 버전, 객관적, 저자, 기여자 및 기타 모든 지도 설정을 지정하는 모듈이 포함되어 있습니다. 목표물은 참가자들이 경기에 참여할 때 보여지는 텍스트입니다, 그래서 이것이 매우 명확하고 간결하게 작성되는것이 중요합니다.
+모든 맵 XML 파일에는 기본이 되는 `<map>` 모듈이 포함되어야 합니다. 여기에는 맵 이름, 버전, 객관적, 저자, 기여자 및 기타 모든 지도 설정을 지정하는 모듈이 포함되어 있습니다. 목표물은 참가자들이 경기에 참여할 때 보여지는 텍스트입니다, 그래서 이것이 매우 명확하고 간결하게 작성되는것이 중요합니다.
 
-`proto=""`속성은 XML파일이 생성한 Game버전을 저장합니다. 이 값이 실행 중인 Game의 버전보다 높으면 맵이 로드되지 않습니다. 더 낮은 경우 맵이 로드되지만 XML은 오래된 방식으로 해석될 수 있습니다. 맵 제작자들은 항상 최신 버전의 XML을 사용해야 하며, 이는 Avis Network 로테이션에 추가되는 새로운 맵에 필요할 수 있습니다.
+`proto=""`속성은 XML 파일이 생성한 게임버전을 저장합니다. 이 값이 실행 중인 게임의 버전보다 높으면 맵이 로드되지 않습니다. 더 낮은 경우 맵이 로드되지만 XML은 오래된 방식으로 해석될 수 있습니다. 맵 제작자들은 항상 최신 버전의 XML을 사용해야 하며, 이는 Avis Network 로테이션에 추가되는 새로운 맵에 필요할 수 있습니다.
 
 맵 버전은 버전 관리 스키마인 `major.minor.patch`를 따라야 합니다.
 
@@ -29,7 +29,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          이 경기에 사용되는 모든 모듈을 포함하는 메인 맵 노드입니다
+          이 경기에 사용되는 모든 모듈을 포함하는 메인 맵 노드입니다.
         </td>
         <td>
           <span class='label label-default'>XML 모듈</span>
@@ -55,7 +55,7 @@ title:  "기본 맵 요소"
           <code>proto</code>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필요합니다.</span>
           맵 XML 프로토콜 버전입니다
         </td>
         <td>
@@ -67,7 +67,7 @@ title:  "기본 맵 요소"
         <td>
           <code>game</code>
         </td>
-        <td>이 경기의 게임 모드에 대한 사용자 정의 제목입니다</td>
+        <td>이 경기의 게임 모드에 대한 사용자 정의 제목입니다.</td>
         <td>
           <span class='label label-primary'>문자열</span>
         </td>
@@ -77,9 +77,9 @@ title:  "기본 맵 요소"
         <td>
           <code>internal</code>
         </td>
-        <td>나침반을 이용해서 Y255보다 높은 곳을 이동하는것을 방지합니다</td>
+        <td>나침반을 이용해서 Y255보다 높은 곳을 이동하는것을 방지합니다.</td>
         <td>
-          <span class='label label-primary'>참/거짓</span>
+          <span class='label label-primary'>true/false</span>
         </td>
         <td>거짓</td>
       </tr>
@@ -105,8 +105,8 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
-          맵의 제목을 나타냅니다
+          <span class='label label-danger'>필요</span>
+          맵의 제목을 나타냅니다.
         </td>
         <td>
           <span class='label label-primary'>문자열</span>
@@ -120,7 +120,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필요</span>
           맵의
           <a href='http://semver.org'>Semantic version</a>
           문자열
@@ -137,7 +137,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          <span class='label label-danger'>필요합니다</span>
+          <span class='label label-danger'>필요</span>
           경기가 시작될 때 보여지는 맵의 목표
         </td>
         <td>
@@ -153,7 +153,7 @@ title:  "기본 맵 요소"
         </td>
         <td>
           <span class='label label-danger'>필요합니다</span>
-          맵의 제작자, 적어도 한명 이상의 제작자가 필요합니다
+          맵의 제작자, 적어도 한명 이상의 제작자가 필요합니다.
         </td>
         <td>
           <code>{{'<author>' | escape_once}}</code>
@@ -167,7 +167,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          맵을 제작하는 데 기여를 한 사람
+          맵을 제작하는 데 기여를 한 사람.
         </td>
         <td>
           <code>{{'<contributor>' | escape_once}}</code>
@@ -182,7 +182,7 @@ title:  "기본 맵 요소"
         </td>
         <td>
           <a class='left-ref-link' href='#gamemode'><i class="fa fa-chevron-down"></i></a>
-          맵의 게임 모드, 만약 이 값이 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다
+          맵의 게임 모드, 만약 이 값이 지정되지 않으면 맵이 사용되는 모듈에 대해 게임모드를 설정합니다.
         </td>
         <td>
           <span class='label label-primary'>게임모드 ID</span>
@@ -196,7 +196,7 @@ title:  "기본 맵 요소"
     <map proto="{{site.current_proto}}">
     <name>맵 이름</name>
     <version>1.0.0</version>
-    <objective>맵 목표에 대한 간략한 설명</objective>
+    <objective>맵 목표에 대한 간략한 설명을 적으시면 됩니다</objective>
 
     <!-- 맵 제작자와 기여자 -->
 
@@ -326,7 +326,7 @@ title:  "기본 맵 요소"
           </span>
         </td>
         <td>
-          맵의 게임모드를 나타냅니다
+          맵의 게임모드를 나타냅니다.
         </td>
         <td>
           <span class='label label-primary'>게임모드 ID</span>
@@ -355,23 +355,23 @@ title:  "기본 맵 요소"
         <td>
           <code>ctw</code>
         </td>
-        <td>양털 뺏기 게임</td>
+        <td>양털 쟁탈전 게임</td>
       </tr>
       <tr>
         <td>
           <code>ctf</code>
         </td>
-        <td>깃발 뺏기 게임</td>
+        <td>깃발 쟁탈전 게임</td>
         <td>
-          <code>dtc</code>
-        </td>
-        <td>코어 부수기 게임</td>
+          <code>dtc</code>
+        </td>
+        <td>코어 파괴 게임</td>
       </tr>
       <tr>
         <td>
           <code>dtm</code>
         </td>
-        <td>모뉴먼트 부수기 게임</td>
+        <td>모뉴먼트 파괴 게임</td>
         <td>
           <code>ad</code>
         </td>
@@ -385,13 +385,13 @@ title:  "기본 맵 요소"
         <td>
           <code>blitz</code>
         </td>
-        <td>Blitz게임</td>
+        <td>Blitz 게임</td>
       </tr>
       <tr>
         <td>
           <code>rage</code>
         </td>
-        <td>Rage게임</td>
+        <td>Rage 게임</td>
         <td>
           <code>scorebox</code>
         </td>
@@ -405,7 +405,7 @@ title:  "기본 맵 요소"
         <td>
           <code>gs</code>
         </td>
-        <td>Ghost Squadron게임</td>
+        <td>고스트 스쿼드론 게임</td>
       </tr>
       <tr>
         <td>
